@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piattelli Arredo Immobili | Soluzioni per Arredatori, B&B e Agenzie</title>
-  <meta name="description" content="Forniture e arredi su misura per B&B, seconde case, agenzie immobiliari e interior designer. Qualità artigianale, tessuti tecnici e tempi certi.">
+  <title>Piattelli Arredo Immobili - Arredamento Tessile e Tende su Misura a Roma</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,220 +11,149 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER / NAVBAR -->
   <header class="header">
     <div class="container header-container">
-      <a href="#" class="logo-link">
-        <img src="logo-immobili.svg" alt="Piattelli Arredo Immobili" class="logo-img">
-      </a>
-      <a href="#contatti" class="btn btn-primary nav-btn">Richiedi Info B2B</a>
+      <div class="logo">
+        <img src="logo.png" alt="Piattelli Arredo Immobili" class="logo-img">
+      </div>
+      <a href="#contatti" class="btn btn-outline">Richiedi Preventivo</a>
     </div>
   </header>
 
-  <!-- HERO SECTION CON SFONDO IMMAGINE -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-overlay"></div>
     <div class="container hero-container">
-      <div class="hero-text">
-        <span class="badge">Arredo & Soluzioni per Immobili</span>
-        <h1>Valorizza B&B, Seconde Case e Progetti d'Arredo.</h1>
-        <p>Affianchiamo Interior Designer, Agenti Immobiliari e Gestori con soluzioni su misura, tessuti tecnici ad alta resistenza e posa in opera qualificata.</p>
-        <div class="hero-actions">
-          <a href="#target-section" class="btn btn-primary">Scopri le Soluzioni per Te</a>
-          <a href="#contatti" class="btn btn-outline-light">Parla con un Consulente</a>
+      <div class="hero-content">
+        <span class="badge">Sartoria Tessile & Forniture Contract a Roma</span>
+        <h1>Tessuti, Tendaggi e Arredo Tessile per la Tua Struttura</h1>
+        <p>Progettiamo e realizziamo soluzioni tessili su misura per alberghi, B&B, residenze private e studi di architettura. Dal bozzetto alla posa in opera.</p>
+        <div class="hero-buttons">
+          <a href="#contatti" class="btn btn-primary">Contattaci Ora</a>
+          <a href="#sedi" class="btn btn-secondary">Scopri le Nostre Sedi</a>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>Perché scegliere Piattelli:</h3>
-        <ul class="check-list">
-          <li><strong>Tessuti Tecnici Ignifughi (Classe 1IM)</strong> & Antimacchia</li>
-          <li><strong>Listini e Condizioni Riservate</strong> per Professionisti</li>
-          <li><strong>Rilievo Misure & Posa in Opera</strong> con personale interno</li>
-          <li><strong>Tempi di Consegna Garantiti</strong> per la tua operatività</li>
-        </ul>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Arredamento Tessile di Pregio">
       </div>
     </div>
   </section>
 
-  <!-- TARGET SELECTION (TAB CON IMMAGINI CONTESTUALI) -->
-  <section id="target-section" class="section target-section">
+  <!-- PUNTI DI FORZA -->
+  <section class="section features-section">
     <div class="container">
-      <div class="section-title">
-        <h2>Soluzioni Su Misura Per la Tua Attività</h2>
-        <p>Seleziona il tuo profilo per scoprire come possiamo supportare il tuo lavoro o valorizzare la tua struttura.</p>
-      </div>
-
-      <div class="tabs-nav">
-        <button class="tab-btn active" onclick="openTab(event, 'arredatori')">Arredatori & Designer</button>
-        <button class="tab-btn" onclick="openTab(event, 'immobiliare')">Agenzie & Property Manager</button>
-        <button class="tab-btn" onclick="openTab(event, 'hospitality')">B&B & Seconde Case</button>
-      </div>
-
-      <!-- TAB 1: ARREDATORI -->
-      <div id="arredatori" class="tab-content active">
-        <div class="tab-grid">
-          <div class="tab-image">
-            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Arredo Interior Design">
-          </div>
-          <div class="tab-text">
-            <h3>Il braccio operativo per i tuoi progetti d'interni</h3>
-            <p>Diventiamo il partner di fiducia per la realizzazione dei tuoi progetti di interior design. Ci occupiamo del rilievo tecnico, della confezione sartoriale e della posa in opera perfetta.</p>
-            <ul>
-              <li>Campionari fisici pronti all'uso per il tuo studio</li>
-              <li>Scontistica e condizioni commerciali dedicate</li>
-              <li>Progettazione e realizzazione di tende, imbottiti e rivestimenti custom</li>
-            </ul>
-            <a href="#contatti" class="btn btn-primary">Richiedi il Kit Partner</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 2: AGENZIE -->
-      <div id="immobiliare" class="tab-content">
-        <div class="tab-grid">
-          <div class="tab-image">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Home Staging Immobiliare">
-          </div>
-          <div class="tab-text">
-            <h3>Aumenta il valore di vendita o il canone di locazione</h3>
-            <p>Un immobile ben arredato si affitta prima e a prezzi più alti. Aiutiamo agenzie e property manager a valorizzare gli appartamenti con interventi mirati ed efficaci.</p>
-            <ul>
-              <li>Home Staging operativo con elementi d'arredo di impatto</li>
-              <li>Allestimenti veloci ed economici per immobili da mettere a reddito</li>
-              <li>Pacchetti arredo completi per locazioni residenziali e turistiche</li>
-            </ul>
-            <a href="#contatti" class="btn btn-primary">Convenzioni per Agenzie</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 3: B&B -->
-      <div id="hospitality" class="tab-content">
-        <div class="tab-grid">
-          <div class="tab-image">
-            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Camera B&B e Hospitality">
-          </div>
-          <div class="tab-text">
-            <h3>Resistenza, Stile e Normative per la tua struttura</h3>
-            <p>Rinnovare un B&B o arredare una casa vacanze richiede materiali che resistano all'usura e rispettino le normative vigenti, senza rinunciare all'eleganza.</p>
-            <ul>
-              <li>Tessuti ignifughi certificati per strutture ricettive</li>
-              <li>Tessuti antimacchia e idrorepellenti ad alto traffico</li>
-              <li>Soluzioni salva-spazio e arredi multifunzione per ottimizzare le camere</li>
-            </ul>
-            <a href="#contatti" class="btn btn-primary">Richiedi Preventivo B&B</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FEATURES CON CARD SCHEDE VISIVE -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>Un Servizio Completo, Dalla Consulenza al Cantiere</h2>
-      </div>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Rilievo e Progetto">
-          </div>
-          <div class="feature-body">
-            <h3>Rilievo & Progetto</h3>
-            <p>Prendiamo le misure precise sul posto e valutiamo gli ingombri e l'esposizione della luce.</p>
-          </div>
+          <div class="feature-icon">✂️</div>
+          <h3>Sartoria Interna</h3>
+          <p>Confezione artigianale su misura per tendaggi, imbottiti e complementi tessili con la massima cura del dettaglio.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Sartoria Tessile">
-          </div>
-          <div class="feature-body">
-            <h3>Sartoria Interna</h3>
-            <p>Tende, rivestimenti e imbottiti realizzati nei nostri laboratori artigianali con cura per i dettagli.</p>
-          </div>
+          <div class="feature-icon">📦</div>
+          <h3>Magazzino & Pronta Consegna</h3>
+          <p>Ampia disponibilità di tessuti e materiali nei nostri magazzini per garantire tempi di evasione rapidi.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Posa in Opera">
-          </div>
-          <div class="feature-body">
-            <h3>Posa in Opera</h3>
-            <p>Installazione rapida, pulita e professionale curata direttamente dal nostro personale.</p>
-          </div>
+          <div class="feature-icon">📐</div>
+          <h3>Rilievo e Posa in Opera</h3>
+          <p>Servizio completo chiavi in mano: sopraluogo tecnico, misurazione e installazione eseguita da personale qualificato.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FORM CONTATTI -->
-  <section id="contatti" class="section form-section">
-    <div class="container form-container">
-      <div class="form-text">
-        <h2>Lavoriamo Insieme al Tuo Progetto</h2>
-        <p>Compila il modulo specificando la tua attività o esigenza. Ti ricontatteremo entro 24 ore lavorative per inviarti informazioni o fissare un sopralluogo.</p>
+  <!-- SEZIONE SEDI -->
+  <section id="sedi" class="section bg-light locations-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Le Nostre Sedi a Roma</h2>
+        <p>Un punto di riferimento di rappresentanza nel cuore della città e una struttura produttiva con laboratorio e magazzino per dare forma a ogni progetto.</p>
       </div>
-      <form class="lead-form" action="#" method="POST">
-        <div class="form-group">
-          <label for="nome">Nome e Cognome / Ragione Sociale *</label>
-          <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi o Studio Design" required>
-        </div>
+      <div class="locations-grid">
         
-        <div class="form-row">
+        <!-- SEDE LUNGOTEVERE -->
+        <div class="location-card highlight-card">
+          <div class="location-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Showroom di Rappresentanza Lungotevere Roma">
+          </div>
+          <div class="location-content">
+            <div class="location-badge">Showroom & Rappresentanza</div>
+            <h3>Sede Lungotevere</h3>
+            <p class="location-address">📍 Lungotevere, Roma</p>
+            <p>Il nostro spazio espositivo nel cuore di Roma dedicato all'accoglienza di interior designer, architetti e clienti B2B. Il luogo ideale per visionare i campionari, discutere i progetti e definire ogni dettaglio estetico.</p>
+            <ul class="location-list">
+              <li>Showroom con selezione tessuti e campionari dal vivo</li>
+              <li>Incontri riservati e consulenza su appuntamento</li>
+              <li>Punto di riferimento istituzionale per architetti e B2B</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SEDE VIA FEDERICO TOZZI -->
+        <div class="location-card">
+          <div class="location-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Laboratorio e Magazzino Via Federico Tozzi">
+          </div>
+          <div class="location-content">
+            <div class="location-badge secondary">Laboratorio & Magazzino</div>
+            <h3>Sede Via Federico Tozzi</h3>
+            <p class="location-address">📍 Via Federico Tozzi, Roma</p>
+            <p>La nostra anima artigianale e logistica. Un polo operativo dotato di laboratorio di sartoria interna, stoccaggio tessuti ad alta disponibilità e gestione diretta della posa in opera.</p>
+            <ul class="location-list">
+              <li>Sartoria interna per confezioni e lavorazioni su misura</li>
+              <li>Ampio magazzino materiali con prodotti in pronta consegna</li>
+              <li>Centro logistico operativo per rilievi tecnici e posa</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM DI CONTATTO -->
+  <section id="contatti" class="section contact-section">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h2>Richiedi una Consulenza o un Preventivo</h2>
+        <p>Compila il modulo per essere ricontattato da un nostro consulente. Analizzeremo le tue esigenze per proporti le migliori soluzioni tessili.</p>
+        <div class="contact-details">
+          <p><strong>Sede di Rappresentanza:</strong> Lungotevere, Roma</p>
+          <p><strong>Laboratorio & Magazzino:</strong> Via Federico Tozzi, Roma</p>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome e Cognome *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
+          </div>
           <div class="form-group">
             <label for="email">Email *</label>
-            <input type="email" id="email" name="email" placeholder="la-tua-email@dominio.it" required>
+            <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
           </div>
           <div class="form-group">
             <label for="telefono">Telefono *</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="333 1234567" required>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Inserisci il tuo numero">
           </div>
-        </div>
-
-        <div class="form-group">
-          <label for="profilo">Chi sei / Di cosa hai bisogno? *</label>
-          <select id="profilo" name="profilo" required>
-            <option value="" disabled selected>Seleziona il tuo profilo...</option>
-            <option value="arredatore">Interior Designer / Architetto</option>
-            <option value="agenzia">Agenzia Immobiliare / Property Manager</option>
-            <option value="beb">Gestore B&B / Struttura Ricettiva</option>
-            <option value="privato">Privato (Seconda Casa / Appartamento)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="messaggio">Dettagli del progetto (Città, Tempistiche, Tipologia interventi)</label>
-          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Descrivi brevemente l'immobile o la richiesta..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Richiedi Consulenza / Contatto B2B</button>
-      </form>
+          <div class="form-group">
+            <label for="messaggio">Messaggio o Dettagli Progetto</label>
+            <textarea id="messaggio" name="messaggio" rows="4" placeholder="Descrivi brevemente la tua richiesta..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Invia Richiesta</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; Piattelli Arredo Immobili. Tutti i diritti riservati.</p>
+      <p><strong>Piattelli Arredo Immobili</strong></p>
+      <p>Showroom: Lungotevere, Roma | Laboratorio e Magazzino: Via Federico Tozzi, Roma</p>
+      <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">&copy; Tutti i diritti riservati.</p>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT TAB SWITCHER -->
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active");
-      }
-      tablinks = document.getElementsByClassName("tab-btn");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active");
-      evt.currentTarget.classList.add("active");
-    }
-  </script>
 </body>
 </html>
