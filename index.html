@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- HEADER / NAVBAR -->
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
       <a href="#" class="logo-link">
@@ -22,8 +22,9 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION CON SFONDO IMMAGINE -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="container hero-container">
       <div class="hero-text">
         <span class="badge">Arredo & Soluzioni per Immobili</span>
@@ -31,7 +32,7 @@
         <p>Affianchiamo Interior Designer, Agenti Immobiliari e Gestori con soluzioni su misura, tessuti tecnici ad alta resistenza e posa in opera qualificata.</p>
         <div class="hero-actions">
           <a href="#target-section" class="btn btn-primary">Scopri le Soluzioni per Te</a>
-          <a href="#contatti" class="btn btn-outline">Parla con un Consulente</a>
+          <a href="#contatti" class="btn btn-outline-light">Parla con un Consulente</a>
         </div>
       </div>
       <div class="hero-card">
@@ -46,7 +47,7 @@
     </div>
   </section>
 
-  <!-- TARGET SELECTION (TAB / SELEZIONI B2B) -->
+  <!-- TARGET SELECTION (TAB CON IMMAGINI CONTESTUALI) -->
   <section id="target-section" class="section target-section">
     <div class="container">
       <div class="section-title">
@@ -63,6 +64,9 @@
       <!-- TAB 1: ARREDATORI -->
       <div id="arredatori" class="tab-content active">
         <div class="tab-grid">
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Arredo Interior Design">
+          </div>
           <div class="tab-text">
             <h3>Il braccio operativo per i tuoi progetti d'interni</h3>
             <p>Diventiamo il partner di fiducia per la realizzazione dei tuoi progetti di interior design. Ci occupiamo del rilievo tecnico, della confezione sartoriale e della posa in opera perfetta.</p>
@@ -73,23 +77,15 @@
             </ul>
             <a href="#contatti" class="btn btn-primary">Richiedi il Kit Partner</a>
           </div>
-          <div class="tab-box">
-            <h4>Punti di Forza per Progettisti</h4>
-            <div class="stat-item">
-              <span class="stat-num">100%</span>
-              <span class="stat-desc">Personalizzazione su misura</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">Rilievo</span>
-              <span class="stat-desc">Supporto in cantiere sul posto</span>
-            </div>
-          </div>
         </div>
       </div>
 
-      <!-- TAB 2: AGENZIE & PROPERTY MANAGER -->
+      <!-- TAB 2: AGENZIE -->
       <div id="immobiliare" class="tab-content">
         <div class="tab-grid">
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Home Staging Immobiliare">
+          </div>
           <div class="tab-text">
             <h3>Aumenta il valore di vendita o il canone di locazione</h3>
             <p>Un immobile ben arredato si affitta prima e a prezzi più alti. Aiutiamo agenzie e property manager a valorizzare gli appartamenti con interventi mirati ed efficaci.</p>
@@ -100,23 +96,15 @@
             </ul>
             <a href="#contatti" class="btn btn-primary">Convenzioni per Agenzie</a>
           </div>
-          <div class="tab-box">
-            <h4>Risultati Immediati</h4>
-            <div class="stat-item">
-              <span class="stat-num">+Valore</span>
-              <span class="stat-desc">Immagine impeccabile negli annunci</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">Fast</span>
-              <span class="stat-desc">Tempi di consegna rapidi per non perdere affitti</span>
-            </div>
-          </div>
         </div>
       </div>
 
-      <!-- TAB 3: B&B & SECONDE CASE -->
+      <!-- TAB 3: B&B -->
       <div id="hospitality" class="tab-content">
         <div class="tab-grid">
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Camera B&B e Hospitality">
+          </div>
           <div class="tab-text">
             <h3>Resistenza, Stile e Normative per la tua struttura</h3>
             <p>Rinnovare un B&B o arredare una casa vacanze richiede materiali che resistano all'usura e rispettino le normative vigenti, senza rinunciare all'eleganza.</p>
@@ -127,24 +115,13 @@
             </ul>
             <a href="#contatti" class="btn btn-primary">Richiedi Preventivo B&B</a>
           </div>
-          <div class="tab-box">
-            <h4>Specifiche Hospitality</h4>
-            <div class="stat-item">
-              <span class="stat-num">Classe 1IM</span>
-              <span class="stat-desc">Certificazioni per la sicurezza</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">Zero Stress</span>
-              <span class="stat-desc">Prodotti ad altissima lavabilità</span>
-            </div>
-          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- FEATURES / PERCHÉ PIATTELLI -->
+  <!-- FEATURES CON CARD SCHEDE VISIVE -->
   <section class="section bg-light">
     <div class="container">
       <div class="section-title">
@@ -152,19 +129,31 @@
       </div>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">📐</div>
-          <h3>Rilievo & Progetto</h3>
-          <p>Prendiamo le misure precise sul posto e valutiamo gli ingombri e l'esposizione della luce.</p>
+          <div class="feature-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Rilievo e Progetto">
+          </div>
+          <div class="feature-body">
+            <h3>Rilievo & Progetto</h3>
+            <p>Prendiamo le misure precise sul posto e valutiamo gli ingombri e l'esposizione della luce.</p>
+          </div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🧵</div>
-          <h3>Sartoria Interna</h3>
-          <p>Tende, rivestimenti e imbottiti realizzati nei nostri laboratori artigianali con cura per i dettagli.</p>
+          <div class="feature-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Sartoria Tessile">
+          </div>
+          <div class="feature-body">
+            <h3>Sartoria Interna</h3>
+            <p>Tende, rivestimenti e imbottiti realizzati nei nostri laboratori artigianali con cura per i dettagli.</p>
+          </div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🛠️</div>
-          <h3>Posa in Opera</h3>
-          <p>Installazione rapida, pulita e professionale curata direttamente dal nostro personale.</p>
+          <div class="feature-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Posa in Opera">
+          </div>
+          <div class="feature-body">
+            <h3>Posa in Opera</h3>
+            <p>Installazione rapida, pulita e professionale curata direttamente dal nostro personale.</p>
+          </div>
         </div>
       </div>
     </div>
