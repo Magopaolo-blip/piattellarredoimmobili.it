@@ -29,7 +29,6 @@ body {
   padding: 0 20px;
 }
 
-/* RIDOTTI I PADDING DELLE SEZIONI (da 80px a 45px) */
 .section {
   padding: 45px 0;
 }
@@ -38,7 +37,6 @@ body {
   background-color: var(--bg-light);
 }
 
-/* OPTIMIZED TITLES */
 .section-title {
   text-align: center;
   max-width: 700px;
@@ -119,7 +117,7 @@ body {
   color: #ffffff;
 }
 
-/* PULSANTI CATEGORIA COMPATTI */
+/* PULSANTI CATEGORIA */
 .category-buttons-title {
   font-weight: 600;
   font-size: 0.85rem;
@@ -151,7 +149,7 @@ body {
   border-color: var(--primary-color);
 }
 
-/* HEADER / NAVBAR COMPATTA CON LOGO INGRANDITO */
+/* HEADER / NAVBAR */
 .header {
   padding: 10px 0;
   border-bottom: 1px solid var(--border-color);
@@ -181,7 +179,7 @@ body {
   object-fit: contain;
 }
 
-/* HERO SECTION COMPATTA */
+/* HERO SECTION */
 .hero {
   padding: 40px 0;
   background-color: #fff;
@@ -345,23 +343,12 @@ body {
 
 .location-list li {
   margin-bottom: 6px;
-  padding-left: 18px;
   position: relative;
   font-size: 0.88rem;
   color: var(--text-color);
 }
 
-.location-list li::before {
-  content: "•";
-  color: var(--primary-color);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-/* CONTATTI COMPATTI */
+/* CONTATTI */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -382,7 +369,7 @@ body {
 }
 
 .contact-details p {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 0.92rem;
   color: var(--primary-dark);
 }
