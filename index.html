@@ -3,47 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piattelli Arredo Immobili - Arredamento Tessile e Tende su Misura a Roma</title>
-  <meta name="description" content="Progettiamo e realizziamo soluzioni tessili su misura per B&B, alberghi, residenze private e studi di architettura a Roma. Showroom in Lungotevere Marzio 10 e Laboratorio in Via Federico Tozzi 21.">
+  <title>Piattelli Arredo Immobili Roma - Forniture Tessili Contract e Su Misura</title>
+  <meta name="description" content="Arredamento tessile e forniture contract su misura per B&B, hotel, residenze private e architetti a Roma. Showroom in Lungotevere Marzio 10 e Laboratorio in Via Federico Tozzi 21.">
 
   <!-- META TAG OPEN GRAPH PER ANTEPRIMA WHATSAPP / SOCIAL -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Piattelli Arredo Immobili - Arredamento Tessile e Tende a Roma">
-  <meta property="og:description" content="Showroom in Lungotevere Marzio 10 e Laboratorio Artigianale in Via Federico Tozzi 21. Soluzioni tessili su misura a Roma.">
+  <meta property="og:description" content="Soluzioni tessili su misura per strutture ricettive, residenze private e studi d'architettura a Roma. Showroom Lungotevere Marzio 10 | Laboratorio Via Federico Tozzi 21.">
   <meta property="og:url" content="https://magopaolo-blip.github.io/piattelliarredoimmobili.it/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&h=630&q=80">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HEADER / NAVBAR -->
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
-      <div class="logo">
+      <div class="logo-box">
         <img src="logo-immobili.svg" alt="Piattelli Arredo Immobili" class="logo-img">
       </div>
-      <div class="header-actions">
-        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." target="_blank" class="btn btn-whatsapp-header">
-          💬 WhatsApp
+      <div class="header-contact">
+        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." target="_blank" class="phone-link">
+          💬 373 750 2033
         </a>
-        <a href="#contatti" class="btn btn-outline">Richiedi Preventivo</a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION CON FORM A DESTRA -->
   <section class="hero">
     <div class="container hero-container">
-      <div class="hero-content">
-        <span class="badge">Sartoria Tessile & Forniture Contract a Roma</span>
+      
+      <!-- COLONNA SINISTRA -->
+      <div class="hero-left">
         <h1>Tessuti, Tendaggi e Arredo Tessile per la Tua Struttura</h1>
-        <p>Progettiamo e realizziamo soluzioni tessili su misura per alberghi, B&B, residenze private e studi di architettura. Dal bozzetto alla posa in opera.</p>
+        <p class="hero-sub">Progettiamo e realizziamo soluzioni tessili su misura per alberghi, B&B, residenze private e studi di architettura a Roma. Dal bozzetto alla posa in opera.</p>
         
         <!-- I 3 PULSANTI CATEGORIA -->
         <div class="category-buttons-title">Scegli la tua tipologia:</div>
@@ -53,155 +51,182 @@
           <a href="#contatti" class="btn btn-category">Residenze Private</a>
         </div>
 
-        <div class="hero-buttons">
-          <a href="#contatti" class="btn btn-primary">Richiedi Preventivo</a>
-          <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni." target="_blank" class="btn btn-whatsapp">
-            💬 Scrivici su WhatsApp
-          </a>
+        <div class="hero-banner-card">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Arredamento Tessile di Pregio Piattelli">
+          <div class="banner-overlay-text">
+            <h3>SARTORIA TESSILE & FORNITURE CONTRACT</h3>
+            <p>Showroom a Lungotevere Marzio • Confezione a Via Tozzi • Posa Certificata</p>
+          </div>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Arredamento Tessile di Pregio">
+
+      <!-- COLONNA DESTRA (FORM RISALTATO) -->
+      <div class="hero-right" id="contatti">
+        <div class="form-card">
+          <h3>Richiedi una Consulenza o Preventivo</h3>
+          <form class="lead-form">
+            <div class="form-group">
+              <input type="text" placeholder="Il tuo Nome e Cognome *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Numero di Telefono *" required>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Tipologia Cliente</option>
+                <option value="hotel-bb">Hotel / B&B / Struttura Ricettiva</option>
+                <option value="architetto">Architetto / Interior Designer</option>
+                <option value="privato">Privato / Residenza</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea rows="3" placeholder="Descrivi brevemente il tuo progetto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block">Invia Richiesta Progetto</button>
+          </form>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- PUNTI DI FORZA -->
-  <section class="section features-section">
+  <!-- VANTAGGI -->
+  <section class="section section-advantages">
     <div class="container">
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">✂️</div>
-          <h3>Sartoria Interna</h3>
+      <h2 class="section-heading center">Punti di Forza Piattelli Arredo Immobili</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <h4>Sartoria Interna</h4>
           <p>Confezione artigianale su misura per tendaggi, imbottiti e complementi tessili con la massima cura del dettaglio.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">📦</div>
-          <h3>Magazzino & Pronta Consegna</h3>
+        <div class="advantage-card">
+          <h4>Magazzino & Pronta Consegna</h4>
           <p>Ampia disponibilità di tessuti e materiali nei nostri magazzini per garantire tempi di evasione rapidi.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">📐</div>
-          <h3>Rilievo e Posa in Opera</h3>
+        <div class="advantage-card">
+          <h4>Rilievo e Posa in Opera</h4>
           <p>Servizio completo chiavi in mano: sopralluogo tecnico, misurazione e installazione eseguita da personale qualificato.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEZIONE SEDI -->
-  <section id="sedi" class="section bg-light locations-section">
+  <!-- GALLERIA REALIZZAZIONI -->
+  <section class="section bg-light">
     <div class="container">
-      <div class="section-title">
-        <h2>Le Nostre Sedi a Roma</h2>
-        <p>Un punto di riferimento di rappresentanza nel cuore della città e una struttura produttiva con laboratorio e magazzino per dare forma a ogni progetto.</p>
-      </div>
-      <div class="locations-grid">
-        
-        <!-- SEDE LUNGOTEVERE MARZIO 10 -->
-        <div class="location-card highlight-card">
-          <div class="location-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Showroom di Rappresentanza Lungotevere Marzio 10 Roma">
-          </div>
-          <div class="location-content">
-            <div class="location-badge">Showroom & Rappresentanza</div>
-            <h3>Lungotevere Marzio, 10</h3>
-            <p class="location-address">📍 Lungotevere Marzio 10, Roma (Zona Prati / Centro)</p>
-            <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma. Il punto di riferimento per accogliere clienti e architetti.</p>
-            <ul class="location-list">
-              <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
-              <li>🎨 Consultazione campionari esclusivi e tessuti d'alta gamma</li>
-              <li>🤝 Appuntamenti dedicati e riservati con clienti e architetti</li>
-            </ul>
-          </div>
+      <h2 class="section-heading center">Realizzazioni e Progetti d'Arredo</h2>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Arredamento Tessile Residenziale">
+          <div class="gallery-title">Residenze Private & Villa</div>
         </div>
-
-        <!-- SEDE VIA FEDERICO TOZZI 21 -->
-        <div class="location-card">
-          <div class="location-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Laboratorio e Magazzino Via Federico Tozzi 21">
-          </div>
-          <div class="location-content">
-            <div class="location-badge secondary">Laboratorio Artigianale & Confezione</div>
-            <h3>Via Federico Tozzi, 21</h3>
-            <p class="location-address">📍 Via Federico Tozzi 21, Roma</p>
-            <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro, la confezione e il rivestimento di divani, poltrone e tendaggi.</p>
-            <ul class="location-list">
-              <li>✂️ Laboratorio di sartoria e imbottiture su misura</li>
-              <li>🛋️ Ritiro, lavorazione diretta e restauro mobili</li>
-              <li>🅿️ Facile accesso e comodo parcheggio per la logistica</li>
-            </ul>
-          </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Forniture Tessili B&B e Hotel">
+          <div class="gallery-title">B&B, Boutique Hotel & Contract</div>
         </div>
-
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Tendaggi e Tessuti su Misura">
+          <div class="gallery-title">Tendaggi Sarti e Pannelli d'Arredo</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FORM DI CONTATTO -->
-  <section id="contatti" class="section contact-section">
-    <div class="container contact-container">
-      <div class="contact-info">
-        <h2>Richiedi una Consulenza o un Preventivo</h2>
-        <p>Compila il modulo o contattaci subito su WhatsApp. Analizzeremo le tue esigenze per proporti le migliori soluzioni tessili.</p>
-        
-        <div class="contact-details">
-          <p><strong>🏛️ Showroom di Rappresentanza:</strong> Lungotevere Marzio 10, Roma (Prati/Centro)</p>
-          <p><strong>✂️ Laboratorio Artigianale & Magazzino:</strong> Via Federico Tozzi 21, Roma</p>
+  <!-- RECENSIONI (6 RECENSIONI) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading center">Cosa Dicono i Nostri Clienti</h2>
+      <p class="section-sub center">Opinioni e testimonianze di gestori di B&B, architetti e proprietari di casa a Roma.</p>
+      
+      <div class="reviews-grid">
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Hanno allestito tutti i tendaggi e i copriletti per la nostra nuova struttura ricettiva al centro di Roma. Consegna puntuale e resa estetica eccellente."</p>
+          <span><strong>Stefano K.</strong> — Gestore B&B Prati</span>
         </div>
 
-        <div class="direct-whatsapp-box">
-          <p><strong>Preferisci un contatto rapido?</strong></p>
-          <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni." target="_blank" class="btn btn-whatsapp">
-            💬 Chatta con noi su WhatsApp
-          </a>
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Collaboro stabilmente con Piattelli per i progetti d'interni dei miei clienti. Lo showroom di Lungotevere è perfetto per la scelta dei tessuti."</p>
+          <span><strong>Arch. Elena M.</strong> — Studio Interior Roma</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Tendaggi confezionati su misura per il nostro salone. Precisione sartoriale nei dettagli e personale montatore veloce e pulito."</p>
+          <span><strong>Fabrizio V.</strong> — Roma Parioli</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Servizio completo eccellente: dal rilievo delle misure al confezionamento a Via Tozzi. Un punto di riferimento storico per chi cerca qualità a Roma."</p>
+
+          <span><strong>Giulia B.</strong> — Roma EUR</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Tessuti oscuranti e ignifughi per le camere del nostro boutique hotel. Certificazioni in regola e supporto continuo da parte dello staff."</p>
+          <span><strong>Marco T.</strong> — Hotelier Centro Storico</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Ottimo rapporto qualità/prezzo e grande disponibilità nei campionari. Consiglio vivamente sia per privati che per rinnovare immobili a reddito."</p>
+          <span><strong>Alessandra R.</strong> — Property Manager</span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="contact-form-wrapper">
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="nome">Nome e Cognome *</label>
-            <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
-          </div>
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
-          </div>
-          <div class="form-group">
-            <label for="telefono">Telefono *</label>
-            <input type="tel" id="telefono" name="telefono" required placeholder="Inserisci il tuo numero">
-          </div>
-          <div class="form-group">
-            <label for="categoria">Tipologia Cliente</label>
-            <select id="categoria" name="categoria">
-              <option value="hotel-bb">Hotel / B&B / Struttura Ricettiva</option>
-              <option value="architetto">Architetto / Interior Designer</option>
-              <option value="privato">Privato / Residenza</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="messaggio">Messaggio o Dettagli Progetto</label>
-            <textarea id="messaggio" name="messaggio" rows="3" placeholder="Descrivi brevemente la tua richiesta..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Invia Richiesta</button>
-        </form>
+  <!-- SEDI ESATTE -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading center">Le Nostre Sedi a Roma</h2>
+      <div class="locations-grid">
+        
+        <!-- SHOWROOM LUNGOTEVERE MARZIO 10 -->
+        <div class="location-box highlight">
+          <span class="loc-badge">Showroom & Rappresentanza</span>
+          <h3>Lungotevere Marzio, 10</h3>
+          <p class="loc-sub">📍 Roma (Zona Prati / Centro)</p>
+          <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma.</p>
+          <ul>
+            <li>🏛️️ Posizione centrale (Zona Prati / Centro)</li>
+            <li>🎨 Consultazione campionari esclusivi e filati d'arredo</li>
+            <li>🤝 Appuntamenti dedicati con clienti e architetti</li>
+          </ul>
+        </div>
+
+        <!-- LABORATORIO VIA FEDERICO TOZZI 21 -->
+        <div class="location-box">
+          <span class="loc-badge dark">Laboratorio Artigianale & Confezione</span>
+          <h3>Via Federico Tozzi, 21</h3>
+          <p class="loc-sub">📍 Roma</p>
+          <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro e il rivestimento di divani, poltrone e tendaggi.</p>
+          <ul>
+            <li>✂️ Laboratorio di sartoria e imbottiture su misura</li>
+            <li>🛋️ Ritiro e lavorazione diretta mobili</li>
+            <li>🅿️ Facile accesso e comodo parcheggio riservato</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-container">
+    <div class="container center">
       <p><strong>Piattelli Arredo Immobili</strong></p>
       <p>Showroom: Lungotevere Marzio, 10 - Roma | Laboratorio Artigianale: Via Federico Tozzi, 21 - Roma</p>
-      <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.7;">&copy; Tutti i diritti riservati.</p>
+      <p class="copy">&copy; Tutti i diritti riservati.</p>
     </div>
   </footer>
 
-  <!-- TASTO WHATSAPP FLUTTUANTE IN BASSO A DESTRA -->
-  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." class="whatsapp-float" target="_blank" aria-label="Contattaci su WhatsApp">
-    💬
+  <!-- BOTTONE WHATSAPP FLUTTUANTE -->
+  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." class="whatsapp-sticky" target="_blank">
+    💬 Chatta con noi su WhatsApp
   </a>
 
 </body>
