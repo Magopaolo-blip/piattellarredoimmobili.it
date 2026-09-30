@@ -17,7 +17,12 @@
       <div class="logo">
         <img src="logo.png" alt="Piattelli Arredo Immobili" class="logo-img">
       </div>
-      <a href="#contatti" class="btn btn-outline">Richiedi Preventivo</a>
+      <div class="header-actions">
+        <a href="https://wa.me/393000000000?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." target="_blank" class="btn btn-whatsapp-header">
+          💬 WhatsApp
+        </a>
+        <a href="#contatti" class="btn btn-outline">Richiedi Preventivo</a>
+      </div>
     </div>
   </header>
 
@@ -28,9 +33,20 @@
         <span class="badge">Sartoria Tessile & Forniture Contract a Roma</span>
         <h1>Tessuti, Tendaggi e Arredo Tessile per la Tua Struttura</h1>
         <p>Progettiamo e realizziamo soluzioni tessili su misura per alberghi, B&B, residenze private e studi di architettura. Dal bozzetto alla posa in opera.</p>
+        
+        <!-- I 3 PULSANTI CATEGORIA -->
+        <div class="category-buttons-title">Scegli la tua tipologia:</div>
+        <div class="category-buttons">
+          <a href="#contatti" class="btn btn-category">Hotel, B&B e Ricettivo</a>
+          <a href="#contatti" class="btn btn-category">Architetti & Interior Designer</a>
+          <a href="#contatti" class="btn btn-category">Residenze Private</a>
+        </div>
+
         <div class="hero-buttons">
-          <a href="#contatti" class="btn btn-primary">Contattaci Ora</a>
-          <a href="#sedi" class="btn btn-secondary">Scopri le Nostre Sedi</a>
+          <a href="#contatti" class="btn btn-primary">Richiedi Preventivo</a>
+          <a href="https://wa.me/393000000000?text=Buongiorno,%20vorrei%20maggiori%20informazioni." target="_blank" class="btn btn-whatsapp">
+            💬 Scrivici su WhatsApp
+          </a>
         </div>
       </div>
       <div class="hero-image">
@@ -56,7 +72,7 @@
         <div class="feature-card">
           <div class="feature-icon">📐</div>
           <h3>Rilievo e Posa in Opera</h3>
-          <p>Servizio completo chiavi in mano: sopraluogo tecnico, misurazione e installazione eseguita da personale qualificato.</p>
+          <p>Servizio completo chiavi in mano: sopralluogo tecnico, misurazione e installazione eseguita da personale qualificato.</p>
         </div>
       </div>
     </div>
@@ -116,12 +132,21 @@
     <div class="container contact-container">
       <div class="contact-info">
         <h2>Richiedi una Consulenza o un Preventivo</h2>
-        <p>Compila il modulo per essere ricontattato da un nostro consulente. Analizzeremo le tue esigenze per proporti le migliori soluzioni tessili.</p>
+        <p>Compila il modulo o contattaci subito su WhatsApp. Analizzeremo le tue esigenze per proporti le migliori soluzioni tessili.</p>
+        
         <div class="contact-details">
           <p><strong>Sede di Rappresentanza:</strong> Lungotevere, Roma</p>
           <p><strong>Laboratorio & Magazzino:</strong> Via Federico Tozzi, Roma</p>
         </div>
+
+        <div class="direct-whatsapp-box">
+          <p><strong>Preferisci un contatto rapido?</strong></p>
+          <a href="https://wa.me/393000000000?text=Buongiorno,%20vorrei%20maggiori%20informazioni." target="_blank" class="btn btn-whatsapp">
+            💬 Chatta con noi su WhatsApp
+          </a>
+        </div>
       </div>
+
       <div class="contact-form-wrapper">
         <form class="contact-form">
           <div class="form-group">
@@ -135,6 +160,14 @@
           <div class="form-group">
             <label for="telefono">Telefono *</label>
             <input type="tel" id="telefono" name="telefono" required placeholder="Inserisci il tuo numero">
+          </div>
+          <div class="form-group">
+            <label for="categoria">Tipologia Cliente</label>
+            <select id="categoria" name="categoria" style="width:100%; padding:12px; border:1px solid #e5e5e5; border-radius:6px; font-family:inherit;">
+              <option value="hotel-bb">Hotel / B&B / Struttura Ricettiva</option>
+              <option value="architetto">Architetto / Interior Designer</option>
+              <option value="privato">Privato / Residenza</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="messaggio">Messaggio o Dettagli Progetto</label>
@@ -154,6 +187,11 @@
       <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">&copy; Tutti i diritti riservati.</p>
     </div>
   </footer>
+
+  <!-- TASTO WHATSAPP FLUTTUANTE IN BASSO A DESTRA -->
+  <a href="https://wa.me/393000000000?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20tessili." class="whatsapp-float" target="_blank" aria-label="Contattaci su WhatsApp">
+    💬
+  </a>
 
 </body>
 </html>
