@@ -10,8 +10,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Piattelli Vestire Casa - Arredamento Tessile e Tendaggi a Roma">
   <meta property="og:description" content="Soluzioni e allestimenti tessili su misura per la tua casa, B&B, scenografie e immobili a Roma. Showroom Lungotevere Marzio 10 | Laboratorio Via Federico Tozzi 21.">
-  <meta property="og:url" content="https://magopaolo-blip.github.io/piattellivestirecasa.it/">
-  <meta property="og:image" content="hero-banner.png">
+  <meta property="og:url" content="https://magopaolo-blip.github.io/piattellivestecasa.it/">
+  <meta property="og:image" content="https://magopaolo-blip.github.io/piattellivestecasa.it/hero-banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,27 +67,27 @@
       <div class="hero-right" id="contatti">
         <div class="form-card">
           <h3>Richiedi una Consulenza o Preventivo</h3>
-          <form class="lead-form">
+          <form class="lead-form" id="whatsappForm">
             <div class="form-group">
-              <input type="text" placeholder="Il tuo Nome e Cognome *" required>
+              <input type="text" id="formNome" placeholder="Il tuo Nome e Cognome *" required>
             </div>
             <div class="form-group">
-              <input type="tel" placeholder="Numero di Telefono *" required>
+              <input type="tel" id="formTelefono" placeholder="Numero di Telefono *" required>
             </div>
             <div class="form-group">
-              <select required>
+              <select id="formTipologia" required>
                 <option value="" disabled selected>Tipologia Cliente</option>
-                <option value="privato">Privato / Prima o Seconda Casa</option>
-                <option value="hotel-bb">B&B / Case Vacanza / Struttura Ricettiva</option>
-                <option value="agenzia">Agenzia Immobiliare / Home Staging</option>
-                <option value="teatro">Teatro & Scenografie</option>
-                <option value="architetto">Architetto / Interior Designer</option>
+                <option value="Privato / Prima o Seconda Casa">Privato / Prima o Seconda Casa</option>
+                <option value="B&B / Case Vacanza / Struttura Ricettiva">B&B / Case Vacanza / Struttura Ricettiva</option>
+                <option value="Agenzia Immobiliare / Home Staging">Agenzia Immobiliare / Home Staging</option>
+                <option value="Teatro & Scenografie">Teatro & Scenografie</option>
+                <option value="Architetto / Interior Designer">Architetto / Interior Designer</option>
               </select>
             </div>
             <div class="form-group">
-              <textarea rows="3" placeholder="Descrivi brevemente il tuo progetto o l'immobile da arredare..."></textarea>
+              <textarea id="formMessaggio" rows="3" placeholder="Descrivi brevemente il tuo progetto o l'immobile da arredare..."></textarea>
             </div>
-            <button type="submit" class="btn btn-gold btn-block">Invia Richiesta Progetto</button>
+            <button type="submit" class="btn btn-gold btn-block">Invia Richiesta via WhatsApp</button>
           </form>
         </div>
       </div>
@@ -208,7 +210,7 @@
           <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono la confezione su misura di tendaggi e il rivestimento imbottiti.</p>
           <ul>
             <li>✂️ Laboratorio di sartoria e imbottiture su misura</li>
-            <li>🛋️️ Confezione e lavorazione diretta</li>
+            <li>🛋️ Confezione e lavorazione diretta</li>
             <li>🅿️ Facile accesso e comodo parcheggio riservato</li>
           </ul>
         </div>
@@ -230,6 +232,29 @@
   <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20vostre%20soluzioni%20per%20vestire%20casa." class="whatsapp-sticky" target="_blank">
     💬 Chatta con noi su WhatsApp
   </a>
+
+  <!-- SCRIPT PER INVIO FORM SU WHATSAPP -->
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nome = document.getElementById('formNome').value;
+      const telefono = document.getElementById('formTelefono').value;
+      const tipologia = document.getElementById('formTipologia').value;
+      const messaggio = document.getElementById('formMessaggio').value;
+      
+      let testoWA = `*Nuova richiesta da Sito Web*\n\n`;
+      testoWA += `👤 *Nome:* ${nome}\n`;
+      testoWA += `📞 *Telefono:* ${telefono}\n`;
+      testoWA += `🏷 *Tipologia:* ${tipologia}\n`;
+      if (messaggio) {
+        testoWA += `📝 *Messaggio:* ${messaggio}`;
+      }
+      
+      const url = `https://wa.me/393737502033?text=${encodeURIComponent(testoWA)}`;
+      window.open(url, '_blank');
+    });
+  </script>
 
 </body>
 </html>
